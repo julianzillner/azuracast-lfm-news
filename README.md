@@ -2,6 +2,8 @@
 
 **azuracast-lfm-news** is a lightweight Docker-based service that automatically downloads the latest [laut.fm](https://laut.fm) news and uploads them to your AzuraCast instance — ideal for keeping your radio station up to date with fresh content.
 
+> ⚠️ **Disclaimer:** This project is provided as-is, without any warranty. Use at your own risk. I do not take any responsibility for potential issues, data loss, or service disruptions caused by this service.
+
 ## 🔧 Features
 
 - Automatically fetches the latest laut.fm news audio
