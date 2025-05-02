@@ -19,7 +19,7 @@ func main() {
 
 	for {
 		now := time.Now().In(location)
-		nextRun := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), 55, 0, 0, location)
+		nextRun := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), 42, 0, 0, location)
 
 		if now.After(nextRun) {
 			nextRun = nextRun.Add(time.Hour)
