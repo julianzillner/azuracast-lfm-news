@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  azuracast-lfm-news:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      STATION_NAME: ${STATION_NAME}
+      LIVE_PASSWORD: ${LIVE_PASSWORD}
+      SFTP_HOST: ${SFTP_HOST}
+      SFTP_USER: ${SFTP_USER}
+      SFTP_PASSWORD: ${SFTP_PASSWORD}
+    #ports:
+    # - "3333:3333"
+    container_name: azuracast-lfm-news-service
+    restart: unless-stopped
